@@ -3,26 +3,26 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. What is the primary objective of optimal foraging theory?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "To maximize the number of flowers visited per day",
+        "b": "To maximize the net rate of energy gain while foraging",
+        "c": "To minimize competition among pollinators",
+        "d": "To maximize the amount of pollen collected "
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. :",
+      "question": "2. In a bumblebee colony, the primary role of a foraging worker is to:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": " A. Protect the queen from predators",
+        "b": "Build new nest chambers",
+        "c": "Collect nectar and pollen for the colony",
+        "d": "Lay eggs for colony expansion"
       },
       
       "correctAnswer": "c",
@@ -32,45 +32,45 @@
 
     
     {
-      "question": "3.  ",
+      "question": "3. According to the theory, how does a bumblebee typically forage on a lupine plant?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "It begins at the top flower and moves downward.",
+        "b": "It visits flowers randomly.",
+        "c": "It starts from the lowest flower and moves upward.",
+        "d": "It visits only the middle flowers."
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
 
 
  
     {
-      "question": "4. :",
+      "question": "4. In the mathematical model, what does the denominator of the net energy equation represent?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Total nectar available in the plant",
+        "b": "Total calories obtained from flowers only",
+        "c": "Total time spent foraging on the plant and moving to the next plant",
+        "d": "Number of flowers visited "
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
 
 
 
     {
-      "question": "5. ",
+      "question": "5. In the mathematical model, the parameter - P represents:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The probability that the plant has not been drained of nectar",
+        "b": "Predator abundance in the habitat",
+        "c": "Probability of flower pollination",
+        "d": "Number of pollinators visiting the plant"
       },
      
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
