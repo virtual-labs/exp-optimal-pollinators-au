@@ -3,26 +3,55 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. Which among the following phenomenon favor the bumblebees (especially the workers) to maximize their net energy gain while foraging for nectar?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Intraspecific Competition",
+        "b": "Commensalism",
+        "c": "Natural selection",
+        "d": "All of the above"
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. :",
+      "question": "2. Which is the variable which indicates the energy expended in flying from one plant to another for the bee, in the give foraging model?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "ef",
+        "b": "eb",
+        "c": "ew",
+        "d": "none of these"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+
+    
+    {
+      "question": "3. The foraging behavior of the bumble bee is optimized when?",
+      "answers": {
+        "a": "The net energy gain ratio is higher",
+        "b": "The net energy gain ratio is lower",
+        "c": "None"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+
+ 
+    {
+      "question": "4. The relation between the floral position and caloric content of the flower is:",
+      "answers": {
+        "a": "Asymmetrical",
+        "b": "Inversely proportional",
+        "c": "Linear",
+        "d": "None of these"
       },
       
       "correctAnswer": "c",
@@ -30,47 +59,17 @@
     },
 
 
-    
-    {
-      "question": "3.  ",
-      "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-
-
- 
-    {
-      "question": "4. :",
-      "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-
-
 
     {
-      "question": "5. ",
+      "question": "5. The relation between a bumblebee and a flower is an example of which of the following ecological phenomenon?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Competition",
+        "b": "Commensalism",
+        "c": "Parasitism",
+        "d": "Mutualism"
       },
      
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
