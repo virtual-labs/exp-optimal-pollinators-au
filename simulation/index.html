@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Optimal Foraging — Pollinators (Bumblebee) — Simulation</title>
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="card" id="simbox">
+<div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="images\logo.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Optimal Foraging — Pollinators (Bumblebee)</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+<div class="sim">
+<div class="controls">
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:6px">Plot</label>
+<select class="dropBox" id="plotMode" onchange="run()">
+  <option value="netcal">Net calorie per flower position</option>
+  <option value="energy">Net energy rate per patch size</option>
+</select>
+<div class="field"><label>Calories at first flower (noc) <span class="val" id="v_noc">20</span></label><input type="range" id="noc" min="5" max="50" step="1" value="20" oninput="sync()"></div>
+<div class="field"><label>Calorie decline per flower (yi) <span class="val" id="v_yi">1.7</span></label><input type="range" id="yi" min="0.1" max="4" step="0.1" value="1.7" oninput="sync()"></div>
+<div class="field"><label>Flowers per inflorescence <span class="val" id="v_pof">10</span></label><input type="range" id="pof" min="2" max="20" step="1" value="10" oninput="sync()"></div>
+<div class="field"><label>Patch size (positions) <span class="val" id="v_pos">10</span></label><input type="range" id="pos" min="2" max="20" step="1" value="10" oninput="sync()"></div>
+<div class="field"><label>Nectar-visit probability (p) <span class="val" id="v_nd">0.4</span></label><input type="range" id="nd" min="0" max="1" step="0.05" value="0.4" oninput="sync()"></div>
+<div class="field"><label>Energy: fly between plants eb <span class="val" id="v_eb">0.1</span></label><input type="range" id="eb" min="0.05" max="2" step="0.05" value="0.1" oninput="sync()"></div>
+<div class="field"><label>Time: fly between plants tb <span class="val" id="v_tb">5</span></label><input type="range" id="tb" min="1" max="30" step="1" value="5" oninput="sync()"></div>
+<div class="field"><label>Energy per within-plant flight ew <span class="val" id="v_ew">0.03</span></label><input type="range" id="ew" min="0.01" max="1" step="0.01" value="0.03" oninput="sync()"></div>
+<div class="field"><label>Time per within-plant flight tw <span class="val" id="v_tw">0.29</span></label><input type="range" id="tw" min="0.01" max="1" step="0.01" value="0.29" oninput="sync()"></div>
+<div class="field"><label>Energy per flower visit ef <span class="val" id="v_ef">0.02</span></label><input type="range" id="ef" min="0.01" max="1" step="0.01" value="0.02" oninput="sync()"></div>
+<div class="field"><label>Time per flower visit tf <span class="val" id="v_tf">15</span></label><input type="range" id="tf" min="1" max="50" step="1" value="15" oninput="sync()"></div>
+<div class="field"><label>Energy per empty flower ee <span class="val" id="v_ee">0.01</span></label><input type="range" id="ee" min="0.01" max="1" step="0.01" value="0.01" oninput="sync()"></div>
+<div class="field"><label>Time per empty flower te <span class="val" id="v_te">9</span></label><input type="range" id="te" min="1" max="30" step="1" value="9" oninput="sync()"></div>
+<div class="btnrow">
+  <button class="btn btn-primary" onclick="run()">▶ Plot</button>
+  <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+</div>
+<div class="dl-label">Download</div>
+<div class="btnrow">
+  <button class="btn btn-accent" onclick="downloadPNG('pollinators.png')">⤓ PNG</button>
+  <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+</div>
+</div>
+<div class="plotwrap">
+<div class="plot-title" id="plotTitle">Net calorie per flower position</div>
+<canvas class="chart" id="chart" width="720" height="440"></canvas>
+<div class="legend" id="legend"></div>
+<div class="readout">Cursor: X = <b id="rx">–</b>, Y = <b id="ry">–</b></div>
+<div class="counts" id="counts"></div>
+</div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="./js/chart.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/main.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
